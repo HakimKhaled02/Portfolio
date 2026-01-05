@@ -15,9 +15,9 @@ const Navbar = () => {
   }, [])
 
   const handleDownloadCV = () => {
-    // Create a link element
+    // Direct download link - Vercel serves files from public folder
     const link = document.createElement('a')
-    link.href = encodeURI('/RESUME_AMIRULHAKIM_SOFTWAREDEV (1).pdf')
+    link.href = '/resume.pdf'
     link.download = 'RESUME_AMIRULHAKIM_SOFTWAREDEV.pdf'
     document.body.appendChild(link)
     link.click()
